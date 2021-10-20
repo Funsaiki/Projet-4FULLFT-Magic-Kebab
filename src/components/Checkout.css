@@ -1,0 +1,43 @@
+.checkout-container {
+    position: fixed;
+    background-color: #FFFCF0;
+    right: 0px;
+    height: 100%;
+    border-radius: 16px 0px 0px 16px;
+    width: 20%;
+    padding: 1em;
+    overflow-y: auto;
+}
+
+.checkout-container button {
+    height: 10%;
+    width: 50%;
+    background: #4D0302;
+    border: 1px solid #4D0302;
+    box-sizing: border-box;
+    border-radius: 16px;
+    color: #FFF6D6;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.checkout-container h2 {
+    color: #4D0302;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.order-container {
+    border: 1px solid rgba(77, 3, 2, 0.16);
+    border-radius: 16px;
+    color: #4D0302;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    font-family: 'Inconsolata', monospace;
+    margin: 2em;
+    padding: 1em;
+}
