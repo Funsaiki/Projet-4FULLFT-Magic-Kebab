@@ -1,14 +1,21 @@
 import './Checkout.css'
 
-const Checkout = (kebabs) => {
-    const allKebabs = kebabs.kebabs
+const Checkout = (props) => {
+
+    const allKebabs = props.kebabs
+    var price = allKebabs.length * 5.5
+
+    const removeKebab = (e) => {
+        e.currentTarget.remove()
+    }
+
     return (
         <div className="checkout-container">
-            <h2>Total: {allKebabs.length * 5.5}€</h2>
-            <button>Passer la commande</button>
+            <h2>Total: {price}€</h2>
+            <button onClick={props.orderKebab}>Passer la commande</button>
             <h2>Votre commande</h2>
             {allKebabs.map((el) => (
-                <div className='order-container' key={el}><p>{el.breadType}, {el.meatType}, {el.ingredients}, {el.sauces}</p> x1</div>
+                <div onClick={removeKebab} className='order-container' key={el}><p>{el.breadType}, {el.meatType}, {el.ingredients.join(', ')}, {el.sauces.join(', ')}</p> x1</div>
             ))}
         </div>
     )

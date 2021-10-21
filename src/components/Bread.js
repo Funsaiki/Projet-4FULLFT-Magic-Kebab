@@ -1,5 +1,6 @@
 import bread from '../images/pain.png'
 import galette from '../images/galette.png'
+import baguette from '../images/baguette.png'
 import './Ingredients.css'
 import React from 'react'
 
@@ -17,6 +18,10 @@ const Bread = (props) => {
                 <button className='card' onClick={props.handler}>
                     <img src={galette} alt='galette'/>
                     <span>Galette</span>
+                </button>
+                <button className='card' onClick={props.handler}>
+                    <img src={baguette} alt='baguette'/>
+                    <span>Baguette</span>
                 </button>
             </div>
         </div>

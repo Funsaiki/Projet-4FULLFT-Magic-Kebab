@@ -10,13 +10,13 @@
     cursor: pointer;
 }
 
-.card:hover {
+.card:disabled {
     transition: all 0.3s;
     outline: 5px solid #512321;
     border: 1px solid #512321;
 }
 
-.card:focus {
+.card:hover {
     transition: all 0.3s;
     outline: 5px solid #512321;
     border: 1px solid #512321;
@@ -47,6 +47,13 @@ h1 {
     margin-top: 2em;
     font-family: 'Fredoka One', cursive;
     font-style: 36px;
+    color: #4D0302;
+}
+
+h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 36px;
+    font-weight: 500;
     color: #4D0302;
 }
 

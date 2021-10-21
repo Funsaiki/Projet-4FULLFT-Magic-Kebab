@@ -41,3 +41,19 @@
     margin: 2em;
     padding: 1em;
 }
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #FFFCF0;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #4D0302;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #582e2c;
+}
